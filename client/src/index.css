@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .device-frame {
+    @apply max-w-md mx-auto h-screen flex flex-col overflow-hidden;
+  }
+  
+  .status-bar {
+    @apply flex justify-between items-center px-4 py-2;
+  }
+  
+  .bottom-nav {
+    @apply fixed bottom-0 left-0 right-0 max-w-md mx-auto h-16 shadow-lg border-t;
+  }
+  
+  .content-area {
+    @apply pb-16;
+  }
+  
+  .switch-track {
+    @apply relative inline-block w-11 h-6 bg-accent rounded-full cursor-pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .switch-track .switch-thumb {
+    @apply absolute top-1 left-1 w-4 h-4 bg-background rounded-full;
+    transition: transform 0.2s;
+  }
+  
+  input:checked + .switch-track {
+    @apply bg-primary;
+  }
+  
+  input:checked + .switch-track .switch-thumb {
+    transform: translateX(100%);
+  }
+  
+  .slider {
+    @apply appearance-none w-full h-2 bg-accent rounded outline-none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-5 h-5 rounded-full bg-primary cursor-pointer;
+    box-shadow: 0 0 0 4px rgba(var(--primary), 0.15);
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    @apply bg-primary/90;
+    transform: scale(1.1);
+  }
+  
+  .swipe-hint {
+    animation: swipeUp 1.5s infinite;
+  }
+  
+  .gesture-area {
+    @apply relative overflow-hidden rounded-lg;
+    height: 180px;
+  }
+  
+  .gesture-dot {
+    @apply absolute w-8 h-8 bg-primary rounded-full opacity-80;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(var(--primary), 0.5);
+  }
+  
+  .gesture-trace {
+    @apply absolute h-1 bg-primary rounded-full opacity-30;
+  }
+  
+  .gesture-hint {
+    @apply absolute text-sm text-white px-3 py-1 rounded-full opacity-0;
+    background-color: rgba(var(--foreground), 0.75);
+    animation: fadeInOut 2s 1;
+  }
+  
+  /* Long press zone styles */
+  .long-press-zone {
+    @apply touch-none select-none;
+  }
+  
+  .long-press-zone.debug {
+    @apply bg-red-500/30 border border-red-500;
+  }
+  
+  /* Lock screen styles */
+  .lock-screen {
+    @apply bg-gradient-to-b from-gray-900 to-black;
+  }
+  
+  .lock-screen button {
+    @apply transition-all duration-200;
+  }
+  
+  .lock-screen button:active {
+    @apply bg-gray-700/70 transform scale-95;
+  }
+  
+  @keyframes swipeUp {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-40px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .pulse-animation {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+}

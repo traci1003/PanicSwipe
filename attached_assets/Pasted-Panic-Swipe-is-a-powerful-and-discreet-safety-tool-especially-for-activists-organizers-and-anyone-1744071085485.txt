@@ -1,0 +1,110 @@
+Panic Swipe is a powerful and discreet safety tool, especially for activists, organizers, and anyone in sensitive communities like PSL or those advocating for Palestine or other social justice causes.
+
+Here’s the full layout and design plan for the app:
+🛡️ App Name: Panic Swipe
+
+Disguised emergency exit / app cloaker
+🧠 Core Purpose:
+
+When you perform a secret swipe pattern or gesture, the app instantly:
+
+    Hides/disguises sensitive apps
+
+    Logs you out of specific platforms (Twitter, email, Signal, etc.)
+
+    Clears tabs, chat logs, or opens a decoy screen
+
+📲 Main Features
+🔐 1. Secret Panic Gesture
+
+    Default: Triple swipe up + hold (or customizable)
+
+    Triggers instantly — even if the screen is locked
+
+🎭 2. App Disguiser
+
+    Lets you select "protected apps" (e.g., Signal, ProtonMail, Telegram)
+
+    When triggered:
+
+        Icons disappear
+
+        App name + icon can be replaced with decoys (e.g., a “Calculator”)
+
+        Apps are locked behind a PIN, fake crash screen, or “Not Installed” prompt
+
+🧼 3. Auto-Wipe Options
+
+    Wipe browser tabs, clipboard, and recent messages
+
+    Optional “burn mode” to clear recent chats from selected apps
+
+    Option to log out of social media accounts (via API if possible)
+
+🧪 4. Decoy Mode
+
+    You set up a decoy homepage that looks harmless (e.g., shopping list or clock)
+
+    Panic swipe switches to decoy instantly — to stall questioning or searches
+
+📦 5. Vault Mode (Optional)
+
+    Secure file/image vault that gets hidden during panic
+
+    Only visible through a long-press on an invisible icon or via biometric
+
+🛠️ 6. Setup Wizard
+
+    Onboarding walkthrough:
+
+        Select apps to protect
+
+        Choose your swipe or gesture pattern
+
+        Choose optional decoy app and vault contents
+
+💻 Technical Layout (React Native / Expo)
+Pages / Screens:
+
+    Home (Dashboard) – Set panic gesture + select protected apps
+
+    App Locker Settings – Choose disguise method (icon change, fake uninstall, lock)
+
+    Decoy Setup – Choose screen content + trigger key
+
+    Vault (Optional) – Upload photos or files to hide
+
+    Gesture Training – Practice + record your secret swipe pattern
+
+    Emergency Triggered View – Decoy opens, real apps are locked/hidden
+
+🔔 Bonus Features
+Feature	Purpose
+Stealth Mode	Hides app from app drawer (open by dialing a code or via shortcut)
+Fake System Alert	When panic is triggered, shows a system message like “Low Battery – Shutdown”
+Disable Notifications	Mutes or clears sensitive app notifications
+Offline Ready	Functions without needing internet
+Password Trap	If someone enters a fake passcode, they’re shown a dummy version of your phone
+🎨 UI/UX Style
+
+    Dark theme with high contrast buttons
+
+    Minimalist & fast (low animation so it works instantly)
+
+    No obvious branding — makes it look like a utility or system tool
+
+💸 Monetization (Optional):
+
+    Free version: 3 protected apps + gesture lock
+
+    Pro: Unlimited apps, file vault, advanced cloaking ($2.99 one-time or $0.99/mo)
+
+🔐 Real-World Use Cases
+
+    PSL organizers needing fast app cloaking at protests
+
+    Palestinian solidarity supporters under surveillance
+
+    Journalists working in hostile environments
+
+    LGBTQ+ users in unsafe homes needing a fast hide function
