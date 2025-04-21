@@ -1,6 +1,6 @@
 # Panic Swipe
 
-A discreet safety mobile application targeted at activists, organizers, and individuals in potentially dangerous situations. Panic Swipe provides quick emergency response functionality through gesture controls while maintaining stealth capabilities to avoid detection.
+A discreet safety mobile application targeted at activists, organizers, and individuals in potentially dangerous situations. Panic Swipe provides quick emergency response functionality through gesture controls while maintaining stealth capabilities to avoid detection. https://panic-swipe-traci1003.replit.app/
 
 ## Key Features
 
